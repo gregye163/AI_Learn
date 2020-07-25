@@ -1,0 +1,110 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUFFER_COUNT	enc-demo.cpp	40;"	d	file:
+CAMERA_TYPE_IMX258	v4l2Cam.hpp	/^	CAMERA_TYPE_IMX258,$/;"	e	enum:__camera_type
+CAMERA_TYPE_NA	v4l2Cam.hpp	/^	CAMERA_TYPE_NA,$/;"	e	enum:__camera_type
+CAMERA_TYPE_OV9750	v4l2Cam.hpp	/^	CAMERA_TYPE_OV9750,$/;"	e	enum:__camera_type
+CAMERA_TYPE_USB	v4l2Cam.hpp	/^	CAMERA_TYPE_USB,$/;"	e	enum:__camera_type
+CameraType	v4l2Cam.hpp	/^} CameraType;$/;"	t	typeref:enum:__camera_type
+DemoData	enc-demo.cpp	/^} DemoData;$/;"	t	typeref:struct:_demo_data	file:
+INCFLAGS	Makefile	/^INCFLAGS= `pkg-config --cflags bladecv` `pkg-config --cflags gtk+-3.0` -I\/usr\/include\/rockchip\/ -I.\/$/;"	m
+LDDFLAGS	Makefile	/^LDDFLAGS= -lrtspclient -lrockchip_rga -lrockchip_mpp -ldrm -lcam_engine_cifisp -lcam_ia -lpthread  `pkg-config --libs bladecv` `pkg-config --libs gtk+-3.0` $/;"	m
+PKG_CONFIG_PATH	Makefile	/^export PKG_CONFIG_PATH=\/usr\/local\/AID\/pkgconfig:$PKG_CONFIG_PATH$/;"	m
+__camera_type	v4l2Cam.hpp	/^typedef enum __camera_type {$/;"	g
+_demo_data	enc-demo.cpp	/^typedef struct _demo_data {$/;"	s	file:
+alloc	rockchip_rga.cpp	/^RgaBuffer *rockchip_rga::alloc(__u32 format, __u32 width, __u32 height)$/;"	f	class:rockchip_rga
+buffers	enc-demo.cpp	/^	RgaBuffer *buffers[BUFFER_COUNT];$/;"	m	struct:_demo_data	file:
+buffers	v4l2Cam.hpp	/^	struct camera_buffer *buffers;$/;"	m	class:v4l2Cam	typeref:struct:v4l2Cam::camera_buffer
+cam	enc-demo.cpp	/^	v4l2Cam *cam;$/;"	m	struct:_demo_data	file:
+camera_buffer	v4l2Cam.hpp	/^struct camera_buffer {$/;"	s
+camera_init_dma	enc-demo.cpp	/^static int camera_init_dma(v4l2Cam *cam, const char *dev, CameraType type, struct rga_format src_fmt, RgaBuffer **buffers)$/;"	f	file:
+camera_init_userptr	enc-demo.cpp	/^static int camera_init_userptr(v4l2Cam *cam, const char *dev, CameraType type, struct rga_format src_fmt, RgaBuffer **buffers)$/;"	f	file:
+convert	rockchip_rga.cpp	/^int rockchip_rga::convert(void *src_buf, void *dst_buf, struct rga_format src_fmt,$/;"	f	class:rockchip_rga
+crop	enc-demo.cpp	/^	struct rga_crop crop;$/;"	m	struct:_demo_data	typeref:struct:_demo_data::rga_crop	file:
+ctx	rockchip_mpp.hpp	/^	EncCtx ctx;$/;"	m	class:mpp_encoder
+dec	enc-demo.cpp	/^	mpp_decoder *dec;$/;"	m	struct:_demo_data	file:
+dec	rockchip_mpp.hpp	/^	MppDecoder *dec;$/;"	m	class:mpp_decoder
+demo_dbg	enc-demo.cpp	45;"	d	file:
+dequeue	rockchip_mpp.cpp	/^DecFrame *mpp_decoder::dequeue(void)$/;"	f	class:mpp_decoder
+dequeue	rockchip_mpp.cpp	/^EncPacket *mpp_encoder::dequeue(void)$/;"	f	class:mpp_encoder
+dequeue	v4l2Cam.cpp	/^void *v4l2Cam::dequeue(int *index)$/;"	f	class:v4l2Cam
+dev	enc-demo.cpp	/^	char dev[32];$/;"	m	struct:_demo_data	file:
+dst_fmt	enc-demo.cpp	/^	struct rga_format dst_fmt;$/;"	m	struct:_demo_data	typeref:struct:_demo_data::rga_format	file:
+enLive	enc-demo.cpp	/^	int enLive;$/;"	m	struct:_demo_data	file:
+enc	enc-demo.cpp	/^	mpp_encoder *enc;$/;"	m	struct:_demo_data	file:
+enc	rockchip_mpp.hpp	/^	MppEncoder *enc;$/;"	m	class:mpp_encoder
+enc_init	enc-demo.cpp	/^static int enc_init(DemoData *demo)$/;"	f	file:
+encoderExtraData	enc-demo.cpp	/^static int encoderExtraData(DemoData *demo)$/;"	f	file:
+enqueue	rockchip_mpp.cpp	/^int mpp_decoder::enqueue(void *buf, size_t len)$/;"	f	class:mpp_decoder
+enqueue	rockchip_mpp.cpp	/^int mpp_encoder::enqueue(int index)$/;"	f	class:mpp_encoder
+enqueue	v4l2Cam.cpp	/^int v4l2Cam::enqueue(int index)$/;"	f	class:v4l2Cam
+extraData	rockchip_mpp.cpp	/^EncPacket *mpp_encoder::extraData(void)$/;"	f	class:mpp_encoder
+fd	v4l2Cam.hpp	/^	int fd;$/;"	m	class:v4l2Cam
+fd	v4l2Cam.hpp	/^	int fd;$/;"	m	struct:camera_buffer
+fileH264	enc-demo.cpp	/^	FILE *fileH264;$/;"	m	struct:_demo_data	file:
+format	rockchip_rga.hpp	/^	__u32 format;$/;"	m	struct:rga_format
+format	v4l2Cam.hpp	/^	__u32 format;$/;"	m	class:v4l2Cam
+free	rockchip_rga.cpp	/^void rockchip_rga::free(RgaBuffer *buf)$/;"	f	class:rockchip_rga
+freeFrame	rockchip_mpp.cpp	/^void mpp_decoder::freeFrame(DecFrame *frame)$/;"	f	class:mpp_decoder
+freePacket	rockchip_mpp.cpp	/^void mpp_encoder::freePacket(EncPacket *packet)$/;"	f	class:mpp_encoder
+get_camera_format	enc-demo.cpp	/^static __u32 get_camera_format(CameraType type)$/;"	f	file:
+h	rockchip_rga.hpp	/^	__u32 h;$/;"	m	struct:rga_crop
+height	rockchip_rga.hpp	/^	__u32 height;$/;"	m	struct:rga_format
+height	v4l2Cam.hpp	/^	__u32 height;$/;"	m	class:v4l2Cam
+importFds	rockchip_mpp.cpp	/^int mpp_encoder::importFds(int *fd, int count)$/;"	f	class:mpp_encoder
+init	rockchip_mpp.cpp	/^int mpp_decoder::init(DecodeType type)$/;"	f	class:mpp_decoder
+init	rockchip_mpp.cpp	/^int mpp_encoder::init(void)$/;"	f	class:mpp_encoder
+init	rockchip_rga.cpp	/^int rockchip_rga::init(void)$/;"	f	class:rockchip_rga
+init	v4l2Cam.cpp	/^int v4l2Cam::init(const char *dev, CameraType t)$/;"	f	class:v4l2Cam
+length	v4l2Cam.hpp	/^	size_t length;$/;"	m	struct:camera_buffer
+long_options	enc-demo.cpp	/^static struct option long_options[] = {$/;"	v	typeref:struct:option	file:
+main	enc-demo.cpp	/^int main(int argc, char **argv)$/;"	f
+mat	enc-demo.cpp	/^	Mat mat;$/;"	m	struct:_demo_data	file:
+memory	v4l2Cam.hpp	/^	__u32 memory;$/;"	m	class:v4l2Cam
+mpp_decoder	rockchip_mpp.cpp	/^mpp_decoder::mpp_decoder(void)$/;"	f	class:mpp_decoder
+mpp_decoder	rockchip_mpp.hpp	/^class mpp_decoder {$/;"	c
+mpp_encoder	rockchip_mpp.cpp	/^mpp_encoder::mpp_encoder(__u32 format, __u32 width, __u32 height, size_t size)$/;"	f	class:mpp_encoder
+mpp_encoder	rockchip_mpp.cpp	/^mpp_encoder::mpp_encoder(__u32 format, __u32 width, __u32 height, size_t size,$/;"	f	class:mpp_encoder
+mpp_encoder	rockchip_mpp.hpp	/^class mpp_encoder {$/;"	c
+n_buffers	v4l2Cam.hpp	/^	int n_buffers;$/;"	m	class:v4l2Cam
+onCameraCapAndEncEnqueue	enc-demo.cpp	/^static void *onCameraCapAndEncEnqueue(void *data)$/;"	f	file:
+onDecDequeueRgaConvertAndImshow	enc-demo.cpp	/^static int onDecDequeueRgaConvertAndImshow(DemoData *demo)$/;"	f	file:
+onEncDequeue	enc-demo.cpp	/^int onEncDequeue(void *data)$/;"	f
+onEncDequeueAndDecEnqueue	enc-demo.cpp	/^static void *onEncDequeueAndDecEnqueue(void *data)$/;"	f	file:
+parse_crop_parameters	enc-demo.cpp	/^static void parse_crop_parameters(char *str, struct rga_crop *crop)$/;"	f	file:
+query_cameras	enc-demo.cpp	/^static void query_cameras(void)$/;"	f	file:
+reqbufs_dma	v4l2Cam.cpp	/^int v4l2Cam::reqbufs_dma(__u32 count, int *fds, size_t len)$/;"	f	class:v4l2Cam
+reqbufs_mmap	v4l2Cam.cpp	/^int v4l2Cam::reqbufs_mmap(__u32 count)$/;"	f	class:v4l2Cam
+reqbufs_userptr	v4l2Cam.cpp	/^int v4l2Cam::reqbufs_userptr(__u32 count, void **ptrs, size_t len)$/;"	f	class:v4l2Cam
+rga	enc-demo.cpp	/^	rockchip_rga *rga;$/;"	m	struct:_demo_data	file:
+rga	rockchip_rga.hpp	/^	RockchipRga *rga;$/;"	m	class:rockchip_rga
+rga_crop	rockchip_rga.hpp	/^struct rga_crop {$/;"	s
+rga_format	rockchip_rga.hpp	/^struct rga_format {$/;"	s
+rkengine	v4l2Cam.hpp	/^	void* rkengine;$/;"	m	class:v4l2Cam
+rockchip_rga	rockchip_rga.cpp	/^rockchip_rga::rockchip_rga(void)$/;"	f	class:rockchip_rga
+rockchip_rga	rockchip_rga.hpp	/^class rockchip_rga {$/;"	c
+rotate	enc-demo.cpp	/^	RgaRotate rotate;$/;"	m	struct:_demo_data	file:
+setfmt	v4l2Cam.cpp	/^int v4l2Cam::setfmt(__u32 w, __u32 h, __u32 f)$/;"	f	class:v4l2Cam
+short_options	enc-demo.cpp	/^static const char *short_options = "i:w:h:l";$/;"	v	file:
+src_fmt	enc-demo.cpp	/^	struct rga_format src_fmt;$/;"	m	struct:_demo_data	typeref:struct:_demo_data::rga_format	file:
+start	v4l2Cam.cpp	/^int v4l2Cam::start()$/;"	f	class:v4l2Cam
+start	v4l2Cam.hpp	/^	void *start;$/;"	m	struct:camera_buffer
+type	enc-demo.cpp	/^	CameraType type;$/;"	m	struct:_demo_data	file:
+type	v4l2Cam.hpp	/^	CameraType type;$/;"	m	class:v4l2Cam
+usage	enc-demo.cpp	/^static void usage(char **argv)$/;"	f	file:
+v4l2Cam	v4l2Cam.cpp	/^v4l2Cam::v4l2Cam()$/;"	f	class:v4l2Cam
+v4l2Cam	v4l2Cam.hpp	/^class v4l2Cam {$/;"	c
+w	rockchip_rga.hpp	/^	__u32 w;$/;"	m	struct:rga_crop
+width	rockchip_rga.hpp	/^	__u32 width;$/;"	m	struct:rga_format
+width	v4l2Cam.hpp	/^	__u32 width;$/;"	m	class:v4l2Cam
+winname	enc-demo.cpp	/^const string winname = "test";$/;"	v
+x	rockchip_rga.hpp	/^	__u32 x;$/;"	m	struct:rga_crop
+y	rockchip_rga.hpp	/^	__u32 y;$/;"	m	struct:rga_crop
+~mpp_decoder	rockchip_mpp.cpp	/^mpp_decoder::~mpp_decoder(void)$/;"	f	class:mpp_decoder
+~mpp_encoder	rockchip_mpp.cpp	/^mpp_encoder::~mpp_encoder(void)$/;"	f	class:mpp_encoder
+~rockchip_rga	rockchip_rga.cpp	/^rockchip_rga::~rockchip_rga(void)$/;"	f	class:rockchip_rga
+~v4l2Cam	v4l2Cam.cpp	/^v4l2Cam::~v4l2Cam()$/;"	f	class:v4l2Cam

@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+INCFLAGS	Makefile	/^INCFLAGS= `pkg-config --cflags bladecv` `pkg-config --cflags gtk+-3.0`$/;"	m
+LDDFLAGS	Makefile	/^LDDFLAGS= -lrtspclient -lrockchip_rga -lrockchip_mpp -ldrm -lcam_engine_cifisp -lcam_ia -lpthread  `pkg-config --libs bladecv` `pkg-config --libs gtk+-3.0` $/;"	m
+PKG_CONFIG_PATH	Makefile	/^export PKG_CONFIG_PATH=\/usr\/local\/AID\/pkgconfig:$PKG_CONFIG_PATH$/;"	m
+VideoDecoder	rtsp-demo.cpp	/^} VideoDecoder;$/;"	t	typeref:struct:_VideoDecoder	file:
+_VideoDecoder	rtsp-demo.cpp	/^typedef struct _VideoDecoder {$/;"	s	file:
+__IPC_RTSP_HPP__	ipc_rtsp.hpp	27;"	d
+allocBuffer	ipc_rtsp.cpp	/^RgaBuffer* ipcCamera::allocBuffer(__u32 v4l2Format, __u32 width, __u32 height)$/;"	f	class:ipcCamera
+croph	ipc_rtsp.hpp	/^    __u32 croph;$/;"	m	class:ipcCamera
+cropw	ipc_rtsp.hpp	/^    __u32 cropw;$/;"	m	class:ipcCamera
+cropx	ipc_rtsp.hpp	/^    __u32 cropx;$/;"	m	class:ipcCamera
+cropy	ipc_rtsp.hpp	/^    __u32 cropy;$/;"	m	class:ipcCamera
+dec	ipc_rtsp.hpp	/^    MppDecoder *dec;$/;"	m	class:ipcCamera
+dec_count	ipc_rtsp.hpp	/^    int dec_count = 0;$/;"	m	class:ipcCamera
+dequeue	ipc_rtsp.cpp	/^DecFrame* ipcCamera::dequeue(void)$/;"	f	class:ipcCamera
+enqueue	ipc_rtsp.cpp	/^int ipcCamera::enqueue(unsigned char *buf, size_t len)$/;"	f	class:ipcCamera
+f_h264	ipc_rtsp.hpp	/^    FILE *f_h264 = NULL;$/;"	m	class:ipcCamera
+f_nv12	ipc_rtsp.hpp	/^    FILE *f_nv12 = NULL;$/;"	m	class:ipcCamera
+f_rgb24	ipc_rtsp.hpp	/^    FILE *f_rgb24 = NULL;$/;"	m	class:ipcCamera
+freeBuffer	ipc_rtsp.cpp	/^void ipcCamera::freeBuffer(RgaBuffer *buf)$/;"	f	class:ipcCamera
+freeFrame	ipc_rtsp.cpp	/^void ipcCamera::freeFrame(DecFrame *frame)$/;"	f	class:ipcCamera
+height	ipc_rtsp.hpp	/^    __u32 height;$/;"	m	class:ipcCamera
+image	rtsp-demo.cpp	/^    Mat* image;$/;"	m	struct:_VideoDecoder	file:
+init	ipc_rtsp.cpp	/^int ipcCamera::init(DecodeType type)$/;"	f	class:ipcCamera
+ipc	rtsp-demo.cpp	/^    ipcCamera* ipc;$/;"	m	struct:_VideoDecoder	file:
+ipcCamera	ipc_rtsp.cpp	/^ipcCamera::ipcCamera(__u32 w, __u32 h, RgaRotate r, int V, int H, __u32 cx, __u32 cy, __u32 cw, __u32 ch)$/;"	f	class:ipcCamera
+ipcCamera	ipc_rtsp.hpp	/^class ipcCamera {$/;"	c
+ipcPassword	rtsp-demo.cpp	/^const string ipcPassword="admin";$/;"	v
+ipcUrl	rtsp-demo.cpp	/^const string ipcUrl="rtsp:\/\/192.168.1.88:554\/av_stream";$/;"	v
+ipcUser	rtsp-demo.cpp	/^const string ipcUser="admin";$/;"	v
+long_options	rtsp-demo.cpp	/^static struct option long_options[] = {$/;"	v	typeref:struct:option	file:
+main	rtsp-demo.cpp	/^int main(int argc, char **argv)$/;"	f
+microTime	ipc_rtsp.cpp	/^unsigned long ipcCamera::microTime()$/;"	f	class:ipcCamera
+onStreamReceive	ipc_rtsp.cpp	/^void ipcCamera::onStreamReceive(unsigned char *buf, size_t len)$/;"	f	class:ipcCamera
+onVideoDecode	rtsp-demo.cpp	/^void *onVideoDecode(void *data)$/;"	f
+parse_crop_parameters	rtsp-demo.cpp	/^static void parse_crop_parameters(char *crop, __u32 *cropx, __u32 *cropy, __u32 *cropw, __u32 *croph)$/;"	f	file:
+recv_count	ipc_rtsp.hpp	/^    int recv_count = 0;$/;"	m	class:ipcCamera
+rga	ipc_rtsp.hpp	/^    RockchipRga *rga;$/;"	m	class:ipcCamera
+rgaConvertFormat	ipc_rtsp.cpp	/^void ipcCamera::rgaConvertFormat(Mat src, Mat dst, __u32 srcFormat, __u32 dstFormat, __u32 width, __u32 height)$/;"	f	class:ipcCamera
+rgaProcess	ipc_rtsp.cpp	/^void ipcCamera::rgaProcess(DecFrame *frame, __u32 dstFormat, Mat* mat)$/;"	f	class:ipcCamera
+rotate	ipc_rtsp.hpp	/^    RgaRotate rotate;$/;"	m	class:ipcCamera
+saveToFile	ipc_rtsp.cpp	/^void ipcCamera::saveToFile(FILE **fp, void *buf, size_t len, int count)$/;"	f	class:ipcCamera
+short_options	rtsp-demo.cpp	/^static const char *short_options = "d:w:h:r:VHc:";$/;"	v	file:
+usage	rtsp-demo.cpp	/^static void usage(char **argv)$/;"	f	file:
+width	ipc_rtsp.hpp	/^    __u32 width;$/;"	m	class:ipcCamera
+winname	rtsp-demo.cpp	/^const string winname = "ipc-rtsp";$/;"	v
+~ipcCamera	ipc_rtsp.cpp	/^ipcCamera::~ipcCamera()$/;"	f	class:ipcCamera
